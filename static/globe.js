@@ -53,7 +53,7 @@ function spin_the_globe() {
         projection.rotate([rotate[0] + velocity[0] * dt, rotate[1] + velocity[1]]);
         svg.selectAll("path.land").attr("d", path);
         svg.selectAll("path.boundary").attr("d", path);
-        svg.selectAll("path.cities").attr("d", path);
+        // svg.selectAll("path.cities").attr("d", path);
         svg.selectAll("path.source").attr("d", path);
     });
 }
