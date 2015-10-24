@@ -25,7 +25,7 @@ svg.append("path")
     .attr("class", "sphere")
     .attr("d", path);
 
-d3.json("http://127.0.0.1:5000/static/world-110m.json", function(error, world) {
+d3.json("world-110m.json", function(error, world) {
     if (error) {
         throw error;
     }
